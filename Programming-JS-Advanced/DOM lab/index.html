@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+    <h1 id="title" >DOM Introduction</h1>
+    <button class="submit" onclick="add(3,9)">Click me </button>
+    <ul>
+        <li class="row">DOM Methods Example</li>
+        <li class="row">DOM Properties Example</li>
+    </ul>
+
+    <script>
+        function edit(element, match, replacer){
+            const text = element.textContent
+            const matcher = new RegExp(match, 'g')
+            element.textContent = text.replace(matcher, replacer)
+        }
+        const elements = document.getElementsByName('li')
+
+        for (let item of elements){
+            console.log(item)
+        }
+    </script>
+</body>
+</html>
