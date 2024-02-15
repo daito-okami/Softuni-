@@ -1,0 +1,112 @@
+body{
+    width: 1920;
+    margin: 0;
+}
+
+
+
+.begining {
+    height: 70px;
+    justify-content: space-between;
+    background-color: rgb(155, 23, 23);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+
+}
+
+.begining i{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.begining p, .icons{
+    margin: 60px;
+}
+
+.pain{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url(image/mai);
+}
+
+.secondary {
+    position: absolute;
+    bottom: 0; /* Place at bottom */
+    right: 0; /* Place at right */
+    padding: 20px; /* Add some padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    display: flex; /* Maintain horizontal layout */
+    gap: 20px; /* Adjust spacing between elements */
+    justify-content: flex-end; /* Align to right */
+    z-index: 1;
+  }
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    position: relative;
+
+}
+
+.main-title h1{
+    font-size: 88px;
+    letter-spacing: 15px;
+    margin: 10px;
+}
+
+.main-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    }
+  
+.main-title p{
+    width: 60%;
+
+    text-align: center;
+}
+
+.main-title button{
+    padding: 10px 30px;
+    background-color: rgb(155, 23, 23);
+    color: white;
+    border-radius: 6px;
+    border: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-image{
+    width: 100%;
+    position: relative;
+    bottom: 290px;
+    z-index: -1;
+}
+
+
+/*  Welcome page*/
+
+.welcome{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.welcome .title{
+    height: 20%;
+}
+
+.welcome-main{
+    height: 80%;
+    display: flex;
+
+}

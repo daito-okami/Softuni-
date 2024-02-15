@@ -1,0 +1,191 @@
+:root{
+    --gray-light: #efefef;
+    --gray-dark:#909090;
+    --text-color:#545454;
+}
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: var(--gray-black);
+  }
+  
+  .page-section {
+    max-width: 1880px;
+    margin: 1.5rem auto;
+    background-color: var(--gray-light);
+    height: calc(100vh - 1.5rem);
+    padding: 3rem 5rem;
+    overflow: hidden;
+  }
+  
+  .section-flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .section-flexed .section-info {
+    flex: 0 0 40%;
+  }
+  .section-flexed .section-img {
+    flex: 0 1 35%;
+  }
+  
+  .page-section .title {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+  }
+  .page-section .desc {
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  
+  .page-section .divider.vertical {
+    height: 6rem;
+    width: 1px;
+    background-color: black;
+  }
+
+  
+  
+  /* Hero */
+  #hero.page-section {
+    position: relative;
+  }
+  
+  #hero .navigation {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  #hero .hero-img {
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    right: 5rem;
+}
+
+li{
+  list-style: none;
+}
+
+
+ /* camera */
+ #camera .socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#camera .socials .social {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--gray-dark);
+  color: white;
+  position: relative;
+}
+
+#camera .socials .social i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-section .divider.horizontal {
+  height: 1px;
+  width: 6rem;
+  background-color: black;
+  position: relative;
+  top: 70px;
+}
+
+.apolo{
+  position: relative;
+  left: 120px;
+}
+
+.socials{
+  padding-left: 0;
+}
+
+ /* lady full image, need more */
+
+#lady{
+  object-fit: cover;
+  max-width: 100%;
+}
+
+ /* ut enim */
+
+#utenim img{
+  position: relative;
+    width: 100%;
+    left: 1020px;
+    bottom: 400px;
+}
+
+
+#utenim .desc{
+  font-size: 30px;
+}
+
+
+
+/* galery*/
+
+/* Gallery */
+
+#contacts .form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "email subject"
+    "msg msg"
+    "submit submit";
+}
+
+#contacts .form input,
+#contacts .form textarea {
+  background: transparent;
+  border: 1px solid var(--gray-black);
+  border-radius: 2px;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+#contacts .form textarea {
+  resize: none;
+}
+
+#contacts .form .email {
+  grid-area: email;
+}
+#contacts .form .subject {
+  grid-area: subject;
+}
+#contacts .form .msg {
+  grid-area: msg;
+}
+
+#contacts .btn {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--gray-black);
+  background-color: var(--gray-black);
+  color: white;
+  background-color: black;
+  grid-area: submit;
+}
+#contacts{
+  text-align: center;
+  margin: 100px;
+}

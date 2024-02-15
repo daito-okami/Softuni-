@@ -1,0 +1,63 @@
+body{
+
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(224, 223, 235);
+    color: rgb(131, 130, 140);
+    font-weight: normal;
+}
+
+.enterprise{
+    background-color: #f6f8f9;
+    padding: 0 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1400px;
+
+}
+
+
+.enterprise .info {
+    width: 40%;
+    padding: 60px 0;
+  }
+
+
+.enterprise .subtitle{
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    color: rgb(73, 73, 82)
+
+}
+
+.enterprise .title{
+    font-size: 32px;
+    font-weight: 16px;
+    color: rgb(83, 85, 89)
+}
+
+button{
+    all: unset;
+    border: 1px solid  rgb(73, 73, 82);
+    padding: 10px 20px;
+    border-radius: 6px;
+
+}
+
+.btn-sales{
+    border-color: rgb(108, 84, 232);
+    background-color: rgb(108, 84, 232);
+    color: white;
+    margin-right: 12px;
+}
+
+.btn-more{
+    color: rgb(48, 48, 54)
+}
+
+
+img {
+    width: 25%;
+  }

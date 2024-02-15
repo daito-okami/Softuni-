@@ -1,0 +1,52 @@
+main, aside{
+    width: 40%;
+    height: 40%;
+    margin: 70px;
+    
+}
+
+h1{
+    font-weight: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+;
+}
+
+article img{
+    width: 8%;
+}
+
+.mark {
+    display: flex;
+    align-items: center; 
+    background-color: #fff; 
+  }
+
+.car{
+    position: relative;
+    top: 20px;
+}
+
+.text-content h3, .text-content p{
+    margin: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

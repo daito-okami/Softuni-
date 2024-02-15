@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    height: 700px;
+}
+
+.main-image{
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.begining {
+    justify-content: space-between;
+    background-color: rgb(155, 23, 23);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    height: 8%;
+
+}
+
+.secondary{
+    display: flex;
+    gap: 70px;
+    
+    margin-right: 60px;
+    margin-top: 20px;
+    z-index: 1;
+    height: 10%;
+    position: absolute;
+    color: white;
+    justify-content: right;
+    right: 0px;
+}
+
+
+
+.begining i{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.begining p, .icons{
+    margin: 60px;
+}
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    color: white;
+}
+
+.main-title h1{
+    font-size: 68px;
+}
+.title{
+    margin-top: 30px;
+}
+
+.main-title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    }
+  
+.main-title p{
+    width: 50%;
+    font-size: 21px;
+    text-align: center;
+}
+
+.main-title button{
+    padding: 10px 30px;
+    background-color: rgb(155, 23, 23);
+    color: white;
+    border-radius: 6px;
+    border: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.welcome{
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 50px;
+}
+
+.title h1{
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+    margin-top:  15px;
+}
+
+
+.welcome-main{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.coaches{
+    width: 33%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+    padding-bottom: 60px;
+}
+
+.red-h2{
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.coaches p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.coaches h2{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.coaches i{
+    font-size: 56px;
+    margin-left: 35%;
+    text-align: center;
+}
+
+
+.horizontal-line{
+    height: 2px;
+    width: 68px;
+    background-color: red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 900px;
+    margin-bottom: 60px;
+
+}
+
+
+.another{
+    background-color: bisque;
+    margin-top: 350px;
+    height: 600px;
+}
+.another img{
+    width: 350px;
+}
+
+footer {
+    display: flex;
+    background-color: red;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0p;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
