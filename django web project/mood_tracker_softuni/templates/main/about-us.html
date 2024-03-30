@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+    <section>
+        <article class="main-text">
+    <h1> Time is of the essence in our lives </h1>
+    <h3> In our fast-paced lives,  it's easy to feel carried along by the flow of emotions without truly understanding what drives them. Mood tracking provides a simple yet powerful tool to gain clarity,  foster self-awareness, and make positive changes in your well-being.</h3>
+
+        <h3>Here are just some of the benefits!</h3>
+    <ul>
+        <li>
+            <div class="bolded"> <i class="fa-regular fa-lightbulb"></i> Unlock Your Emotional Patterns: </div>
+             <p>By consistently logging your moods, you start to uncover trends. You'll identify triggers,  notice early signs of mood shifts, and pinpoint what situations bring out your best (and worst) self.</p></li>
+        <li><div class="bolded"><i class="fa-solid fa-brain"></i> Empower Your Well-Being:  </div>
+            <p>Knowledge is power. Understanding your emotional landscape lets you proactively manage your moods. You can develop effective coping strategies, prioritize self-care, and make choices that promote a more balanced emotional state. </p></li>
+        <li>
+            <div class="bolded"><i class="fa-solid fa-hand-fist"></i> Find Your Strengths:</div>
+            <p> Mood tracking isn't just about the lows. It celebrates the highs! Discover the activities, people, and environments that consistently boost your mood and actively integrate more of them into your life. </p>
+        </li>
+        <li>  <div class="bolded"> <i class="fa-regular fa-eye"></i>A Journey of Self-Discovery:</div>
+            <p>  Tracking your moods fosters a deeper understanding and acceptance of yourself. It helps normalize the full range of emotions, reminding you that both joy and sadness are parts of the human experience. </p></li>
+    </ul>
+
+        <h1>If you are ready to start tracking your time and get to a better life <br> <a href="sign-up">Sign up here!</a></h1>
+    </article>
+
+    <article class="image">
+    <img src="{% static 'happy person.jpeg' %}" alt="">
+</article>
+</section>
+{% endblock %}

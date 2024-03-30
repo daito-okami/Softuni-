@@ -1,0 +1,12 @@
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
