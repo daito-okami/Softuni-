@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+
+        <ul>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="{% url 'account' %}">Account</a></li>
+            <li class="is-active"><a href="{% url 'edit_account' %}" aria-current="page">Edit account</a></li>
+        </ul>
+    </nav>
+
+    <div class="column">
+        <div class="column is-4">
+            <h1 class="title"> Edit profile</h1>
+            <form method="post" action=" " enctype="multipart/form-data" >
+                {% csrf_token %}
+
+            <div class="field">
+                <label>Username</label>
+
+                <div class="control">
+                    <input type="text" name="username" id="id_username" class="input"{% if request.user.username %} value="{{ request.user.username }} {% endif %}">
+                </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

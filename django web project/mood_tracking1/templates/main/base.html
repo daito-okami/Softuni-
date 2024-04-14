@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+  <header>
+
+       <nav class="main">
+    <ul class="features">
+        <img class="logo" src="{% static 'logo.png' %}" alt="">
+        <div class="main-buttons">
+            <a class="nav-link" href="/home"><button>Home</button></a>
+            <a class="nav-link" href="/about-us"><button>About us</button></a>
+        </div>
+    </ul>
+
+    {% if user.is_authenticated %}
+    <div class="login-buttons">
+        <a class="nav-link" href="{% url 'dashboard' %}"><button>Dashboard</button></a>
+        <a class="nav-link" href="{% url 'account' %}"><button>Profile: {{user.username}}</button></a>
+        <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            <button>Logout</button>
+        </a>
+    </div>
+    {% else %}
+    <div class="login-buttons">
+        <a class="nav-link" href="/login"><button>Log in</button></a>
+        <a class="nav-link" href="/sign-up"><button>Sign up</button></a>
+    </div>
+    {% endif %}
+</nav>
+
+<form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
+    {% csrf_token %}
+</form>
+    </header>
+
+{#    <div class="wrapper">#}
+{#        <section class="section">#}
+{#            {% if messages %}#}
+{#            {%  for message in messages %}#}
+{#            <div class="notifcation is-info">#}
+{#                {{ message }}#}
+{#                {% endfor %}#}
+{#                {% endif %}#}
+
+            </div>
+        </section>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+  </body>
+
+
+</html>

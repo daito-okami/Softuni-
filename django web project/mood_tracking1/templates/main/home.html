@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <main class="main-section">
+        <div class="main-text">
+        <h1>
+            Track Your Moods, Elevate Your Gaming,
+            Unlock Insights into Your Emotional Patterns.
+        </h1>
+        <h3>Analyze mood shifts, connect emotions with activities, improve your overall well-being.</h3>
+        </div>
+        <img class="emotions" src="{% static 'moods.png' %}" alt="">
+
+        <h3>Struggling to articulate your emotions, or it's always hard to keep track of the time you spent on certain activities and how it can affect your mental health?<br>
+            If you want to learn more about how tracking your emotions and our website can help you out with this you can check out <a href="about-us">About us</a></h3>
+    </main>
+
+{% endblock %}

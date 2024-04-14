@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="">Dashboard</a></li>
+            <li class="is-active"><a href="{% url 'account' %}" aria-current="page">Account</a></li>
+        </ul>
+    </nav>
+     <div class="columns">
+     <div class="column is-6">
+         <div class="media mb-4">
+             <div class="media-left">
+
+                 <div>
+
+                     <div class="media-content">
+                         <p class="title is-3"> {% firstof user.get_username%}</p>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     <a href="={% url 'edit_account' %}" class="button "> Edit profile</a>
+     <a href="#" class="button "> Delete profile </a>
+    </div>
+
+
+    <hr>
+
+
+    <div class="column">
+        <h2> Friends</h2>
+
+        <a href="{% url 'friend:add' %}" class="button"> Add a Friend</a>
+    </div>
+
+    <div class="column">
+
+{#            {% for friend in friends %}#}
+{#                <div class="column">#}
+{#                <div class="notifcation">#}
+{#                    <h3 class="is_size-5"> {{ friend.title }}</h3>#}
+{##}
+{#                    <h3></h3>#}
+{##}
+{#                    <a href="{% url 'friend:friend' friend.id %}" class="button">Details</a>#}
+{#                </div>#}
+{#                </div>#}
+{#            {% endfor %}#}
+    </div>
+{% endblock %}

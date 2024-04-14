@@ -1,0 +1,61 @@
+/** header **/
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header{
+    margin-bottom: 10px;
+    background-color: red;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 1px;
+    height: 70px;
+}
+.login-buttons{
+    align-self: center;
+    margin-right: 80px;
+
+}
+
+
+.login-buttons button, .features button{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: transparent 6px solid;
+    font-size: 16px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 4px;
+
+}
+.login-buttons button:hover{
+    background-color:  #ac54ac;
+    animation: ease-in 6ms;
+}
+
+.main-buttons button:hover{
+    background-color:  #ac54ac;
+    animation: ease-in 6ms;
+}
+
+
+header {
+    background-color: #e8487a ;
+}

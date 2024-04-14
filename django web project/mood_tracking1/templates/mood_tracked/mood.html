@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+
+        <ul>
+            <li><a href="">Dashboard</a></li>
+            <li class="is-active"><a href="{% url 'friend:add' %}" aria-current="page">Friends</a></li>
+        </ul>
+    </nav>
+
+    <div class="column">
+        <div class="column is-4">
+            <h1>Friends</h1>
+        </div>
+    </div>
+
+
+{% endblock %}
